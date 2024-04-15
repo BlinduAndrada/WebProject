@@ -1,0 +1,138 @@
+@import '../BookReviewer/global/index';
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.block_container{
+    position:fixed;
+    z-index:400;
+    display: block;
+    background-color: #fff;
+    margin: 0px;
+  
+    padding: 0px;
+   
+    margin-inline: auto; 
+    min-height: auto;
+
+    
+.feed_container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 450;
+    width: 100vw;
+    height: 100vh;
+    background-color:#e3cedd;
+
+    .feed_container_side{
+        z-index: 460;
+        width: 27%;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        padding-bottom: 0px;
+        background-color:#fff;
+
+        .profile{
+            text-align: center;
+            padding: 20px;
+
+            .profile__image {
+                max-width: calc(100% - 40px);
+                min-height: auto;
+                margin-bottom: 20px;
+                border: 4px solid #714E7D;
+
+                @media screen and (max-width: 768px) {
+                    width: calc(100% - 20px); 
+                    max-width: calc(100% - 20px); 
+              }
+
+            }
+
+              .profile__buttons {
+                display: flex;
+                align-self: flex-end;
+                flex-direction: column;
+        
+                .profile__button {
+                  padding: 8px 16px;
+                  margin: 10px 5px;
+                  font-size: 14px;
+                  background-color: #B790C2;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  color: white;
+                  text-decoration: none;
+                  transition: background-color 0.3s ease;
+        
+                  &:hover {
+                    background-color: #714E7D;
+                  }
+        
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+
+              @media screen and (max-width: 600px) {
+                .profile__button {
+                  padding: 6px 12px;
+                  font-size: 9px;
+                }
+              }
+
+
+              
+
+        }
+    }
+
+   
+}
+
+.feed_container_main_feed{
+    z-index: 461;
+    max-width: 73%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    border: 3px solid #714E7D;
+    background-color: #fff;
+    overflow-y:scroll;
+
+    .main_feed__title{
+      color: #714E7D;
+      font-size: larger;
+      padding-left: 40px ;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      border-bottom: 3px solid #714E7D;
+    }
+    
+
+
+}
+
+}
+
+

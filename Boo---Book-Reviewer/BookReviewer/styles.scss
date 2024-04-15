@@ -1,0 +1,108 @@
+@use  '../BookReviewer/global/typography';
+@import '../BookReviewer/global/boilerplate';
+
+
+
+*{
+font-family: typography.$global-font-family;
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+
+.LandingPage {
+    display: flex;
+   z-index: 0;
+   margin: 0 0;
+ 
+   background-color: #3D284F;
+  
+
+  
+}
+.LandingPage::after{
+    background-image: url('../BookReviewer/pictures/hh.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center  ;
+
+    content:"";
+    opacity: 0.6;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.signupButton, .loginButton {
+    width: 300px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.signupButton {
+    background-color: #3d284f;
+}
+
+.loginButton {
+    background-color: #3d284f;
+}
+
+
+
+.Writing{
+    align-self: flex-end;
+    margin-top:300px;
+    padding-left:60px;
+
+    .Text{
+        font-size:96px;
+        color:#e3cedd;
+        margin-bottom:0;
+    }
+    .Text2{
+        font-size:96px;
+        color:#e3cedd;
+        margin-top:0;
+        margin-bottom:0
+    }
+    .line{
+        margin:0;
+        padding:0;
+        color:#3d284f
+    }
+    .SubText{
+        font-size:60px;
+        color:#e3cedd;
+        margin-top:1rem;}
+
+        @media (max-width: 768px) {
+            padding-left: 20px;
+    
+            .Text,
+            .Text2 {
+                font-size: 60px;
+            }
+    
+            .SubText {
+                font-size: 40px;
+            }
+    
+            margin-top: 200px;
+        }
+        
+}
+
+h1{
+    color: #fff;
+}

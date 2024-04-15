@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Settings/style.css" />
+    <title>BOO</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../MainPage/scrip.js"></script>
+
+    <header class="header_BOO">
+      <div class="logo header__logo">
+        <img
+          src="../BookReviewer/pictures/Boo-Logo.png"
+          alt="Logo"
+          class="logo__image"
+          onclick="window.location.href='../MainPage/landingpage.html';"
+        />
+      </div>
+
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Book Name" />
+        <button
+          class="search__button"
+          onclick="window.location.href='../SearchPage/searchPage.html';"
+        >
+          Search Book
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../Library/index.html" class="nav__link">Library</a>
+          </li>
+          <li class="nav__item">
+            <a href="../LookForGroupPage/lookFor.html" class="nav__link"
+              >Groups</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="../AccountPage/account.html" class="nav__link">Account</a>
+          </li>
+          <li class="nav__item">
+            <a href="../Settings/settings.html" class="nav__link_menu"
+              >Settings</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="../AboutPage/aboutpage.html" class="nav__link_menu"
+              >About</a
+            >
+          </li>
+        </ul>
+        <div class="nav__item_special">
+          <p>Menu</p>
+          <ul class="nav_dropdown">
+            <li class="nav__item">
+              <a href="../Library/index.html" class="nav__link">Library</a>
+            </li>
+            <li class="nav__item">
+              <a href="../LookForGroupPage/lookFor.html" class="nav__link_menu"
+                >Groups</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../AccountPage/account.html" class="nav__link_menu"
+                >Account</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../Settings/settings.html" class="nav__link_menu"
+                >Settings</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../AboutPage/aboutpage.html" class="nav__link_menu"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="block_container">
+      <div class="feed_container">
+        <div class="feed_container_side">
+          <div class="feed_container_side_">
+            <div class="account-details">
+              <h2 class="account-details__title">Account Settings</h2>
+              <p class="account-details__description">
+                Manage how your name appears on Boo
+              </p>
+              <div class="account-details__box">
+                <div class="detail">
+                  <label for="change-name">Name:</label>
+                  <input
+                    type="text"
+                    id="change-name"
+                    name="change-name"
+                    class="detail__input"
+                  />
+                </div>
+                <div class="detail">
+                  <label for="first-name">First Name:</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    class="detail__input"
+                  />
+                </div>
+              </div>
+              <div class="account-details__box">
+                <div class="detail">
+                  <label for="phone-number">Phone:</label>
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    class="detail__input"
+                  />
+                </div>
+                <div class="detail">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="detail__input"
+                  />
+                </div>
+              </div>
+              <div class="account-details__box">
+                <div class="detail">
+                  <label for="gender">Gender:</label>
+                  <select id="gender" name="gender" class="detail__select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <h2 class="other-details__title">Other Details</h2>
+              <div class="other-details__box">
+                <div class="detail">
+                  <label>Date of Birth:</label>
+                  <div class="dob">
+                    <label for="year">Year:</label>
+                    <input
+                      type="text"
+                      id="year"
+                      name="year"
+                      placeholder="YYYY"
+                      class="dob__input"
+                    />
+
+                    <label for="month">Month:</label>
+                    <input
+                      type="text"
+                      id="month"
+                      name="month"
+                      placeholder="MM"
+                      class="dob__input"
+                    />
+                    <label for="day">Day:</label>
+                    <input
+                      type="text"
+                      id="day"
+                      name="day"
+                      placeholder="DD"
+                      class="dob__input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="other-details__box">
+                <div class="detail">
+                  <label for="city">City:</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    class="detail__input"
+                  />
+                </div>
+                <div class="detail">
+                  <label for="state">State:</label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    class="detail__input"
+                  />
+                </div>
+              </div>
+              <div class="other-details__box">
+                <div class="detail">
+                  <label for="country">Country:</label>
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    class="detail__input"
+                  />
+                </div>
+                <div class="detail">
+                  <label for="zip-code">Zip Code:</label>
+                  <input
+                    type="text"
+                    id="zip-code"
+                    name="zip-code"
+                    class="detail__input"
+                  />
+                </div>
+              </div>
+              <div class="about-you">
+                <h3>About You</h3>
+                <div class="my-interests">
+                  <h4>My Interests</h4>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      id="interests"
+                      placeholder="Write about your interests"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="book-preferences">
+                  <h4>What Kind of Books Do You Like to Read?</h4>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      id="bookPreferences"
+                      placeholder="Write about your book preferences"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="about-me-part">
+                  <h4>About Me (Tips)</h4>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      id="aboutMe"
+                      placeholder="Write about yourself"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="button-group">
+                <button
+                  class="btn btn-primary"
+                  onclick="window.location.href='../AccountPage/account.html';"
+                >
+                  Save
+                </button>
+                <button
+                  class="btn btn-secondary"
+                  onclick="window.location.href='../AccountPage/account.html';"
+                >
+                  Discard
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

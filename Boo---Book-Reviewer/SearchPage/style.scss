@@ -1,0 +1,137 @@
+@use  '../BookReviewer/global/typography';
+@import '../BookReviewer/global';
+
+
+*{
+font-family: typography.$global-font-family;
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+.Whole__Page{
+    position:fixed;
+    z-index:400;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    //background-color:#e3cedd;
+    margin-inline: auto; 
+    min-height: auto;
+    background-image: url(../BookReviewer/pictures/401be19115aefd10f7c7f9c51036e94c.jpg);
+
+
+    .Big__Container{
+        display: flex;
+       
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 450;
+        width: 100vw;
+        height: 100vh;
+       // background-color: #e3cedd;
+       background-image: url(../BookReviewer/pictures/401be19115aefd10f7c7f9c51036e94c.jpg);
+        
+    
+        .side__container{
+            z-index: 460;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 100%;
+            background-color: #fff;
+          
+            margin-left: 2%;
+            margin-right: 3%;
+            margin-top: 2%;
+
+            .side__container__text{
+              font-size: 18px;
+              color: #3D284F;
+              margin-bottom: 1rem;
+              margin-left: 1rem;
+            }
+            .genre__total__list{
+                display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+                .genre_list{
+                    margin-bottom: 1rem;
+                    margin-left: 1rem;
+    
+                }
+            }
+
+            .genre__total__list::-webkit-scrollbar{
+                width: 0px;
+            }
+           
+        }
+    
+        .main_container{
+            align-items: center;
+            margin-top: 2%;
+             width: 75%;
+             display: flex;
+             border: 2px solid #714E7D;
+             flex-direction: column;
+             height: 100%;
+             //background-color: #fff;
+             background-image: url(../BookReviewer/pictures/401be19115aefd10f7c7f9c51036e94c.jpg);
+           .book__container::-webkit-scrollbar{
+            width: 0px;
+           }
+            .book__container{
+                overflow-y:scroll;
+                .book__container__profile{
+                    
+                    display: flex;
+                    //background-color: #e3cedd;
+                    background-image: url(../BookReviewer/pictures/401be19115aefd10f7c7f9c51036e94c.jpg);
+                    border-top: 2px solid #714E7D;
+                    border-bottom: 2px solid #714E7D;;
+                    margin-top: 1rem;
+                    font-size: 14px;
+                    color: #3D284F;
+                      .book__profile__image{
+                        width: 25%;
+                        margin-block: 5%;
+                        margin:5% 3% 5% 2%;
+                        border: 2px solid #714E7D;
+                      }
+    
+                      .Book__name{
+                        background-color: #3D284F;
+                        margin-bottom: 10px;
+                         display: flex;
+                         align-items: flex-end;
+                         justify-content:space-between;
+    
+                        .Book__name p{
+                            font-size: 16px;
+                          
+                        }
+                       
+                        color: #e3cedd;
+                        font-size: 14px; 
+                    
+                        .Book__link{
+                         text-decoration: none;
+                         color: #e3cedd;
+                                   }
+                      }
+
+                      .description{
+                        margin-right: 2%;
+                        margin-bottom: 2%;
+                        background-color: #fff;
+                        text-align: center;
+                      }
+    
+           
+                }
+            }
+        }
+    }
+
+}

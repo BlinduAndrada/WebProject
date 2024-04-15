@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+    />
+    <link rel="stylesheet" href="../SearchPage/style.css" />
+    <title>Boo</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../MainPage/scrip.js"></script>
+    <header class="header_BOO">
+      <div class="logo header__logo">
+        <img
+          src="../BookReviewer/pictures/Boo-Logo.png"
+          alt="Logo"
+          class="logo__image"
+          onclick="window.location.href='../MainPage/landingpage.html';"
+        />
+      </div>
+
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Book Name" />
+        <button
+          class="search__button"
+          onclick="window.location.href='../SearchPage/searchPage.html';"
+        >
+          Search Book
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../Library/index.html" class="nav__link">Library</a>
+          </li>
+          <li class="nav__item">
+            <a href="../LookForGroupPage/lookFor.html" class="nav__link"
+              >Groups</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="../AccountPage/account.html" class="nav__link">Account</a>
+          </li>
+          <li class="nav__item">
+            <a href="../Settings/settings.html" class="nav__link_menu"
+              >Settings</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="../AboutPage/aboutpage.html" class="nav__link_menu"
+              >About</a
+            >
+          </li>
+        </ul>
+        <div class="nav__item_special">
+          <p>Menu</p>
+          <ul class="nav_dropdown">
+            <li class="nav__item">
+              <a href="../Library/index.html" class="nav__link">Library</a>
+            </li>
+            <li class="nav__item">
+              <a href="../LookForGroupPage/lookFor.html" class="nav__link_menu"
+                >Groups</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../AccountPage/account.html" class="nav__link_menu"
+                >Account</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../Settings/settings.html" class="nav__link_menu"
+                >Settings</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../AboutPage/aboutpage.html" class="nav__link_menu"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="Whole__Page">
+      <div class="Big__Container">
+        <div class="side__container">
+          <p class="side__container__text">Want a certain genre?</p>
+          <div class="genre__total__list">
+            <label class="genre_list"><input type="checkbox" />Romance</label>
+            <label class="genre_list"><input type="checkbox" />Thriller</label>
+            <label class="genre_list"><input type="checkbox" />Horror</label>
+            <label class="genre_list"><input type="checkbox" />Fantasy</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Science Fiction</label
+            >
+            <label class="genre_list"><input type="checkbox" />Mystery</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Historical Fiction</label
+            >
+            <label class="genre_list"><input type="checkbox" />Adventure</label>
+            <label class="genre_list"><input type="checkbox" />Dystopian</label>
+            <label class="genre_list"><input type="checkbox" />Comedy</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Young Adult</label
+            >
+            <label class="genre_list"
+              ><input type="checkbox" />Non-fiction</label
+            >
+            <label class="genre_list"><input type="checkbox" />Crime</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Paranormal</label
+            >
+            <label class="genre_list"
+              ><input type="checkbox" />Literary Fiction</label
+            >
+            <label class="genre_list"
+              ><input type="checkbox" />Supernatural</label
+            >
+            <label class="genre_list"><input type="checkbox" />Action</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Contemporary</label
+            >
+            <label class="genre_list"><input type="checkbox" />Poetry</label>
+            <label class="genre_list"><input type="checkbox" />Satire</label>
+            <label class="genre_list"><input type="checkbox" />Humor</label>
+            <label class="genre_list"><input type="checkbox" />Drama</label>
+            <label class="genre_list"><input type="checkbox" />Romance</label>
+            <label class="genre_list"
+              ><input type="checkbox" />Psychological thriller</label
+            >
+          </div>
+        </div>
+        <div class="main_container">
+          <div class="main_feed__title">Books found:</div>
+          <div class="book__container">
+            <div class="book__container__profile">
+              <img
+                src="../BookReviewer/pictures/book_cover.jpeg"
+                alt="Friend Profile Picture"
+                class="book__profile__image"
+              />
+              <div class="book__info__container">
+                <div class="Book__name">
+                  <a href="../book/index.html" class="Book__link"
+                    ><p class="book__name">Name</p></a
+                  >
+                  <p>by Author</p>
+                </div>
+                <div class="description">
+                  To enter the palace means to walk a path stained in blood...
+                  Joseon (Korea), 1758. There are few options available to
+                  illegitimate daughters in the capital city, but through hard
+                  work and study, eighteen-year-old Hyeon has earned a position
+                  as a palace nurse. All she wants is to keep her head down, do
+                  a good job, and perhaps finally win her estranged father's
+                  approval. But Hyeon is suddenly thrust into the dark and
+                  dangerous world of court politics when someone murders four
+                  women in a single night, and the prime suspect is Hyeon's
+                  closest friend and mentor. Determined to prove her beloved
+                  teacher's innocence, Hyeon launches her own secret
+                  investigation. In her hunt for the truth, she encounters
+                  Eojin, a young police inspector also searching for the killer.
+                  When evidence begins to point to the Crown Prince himself as
+                  the murderer, Hyeon and Eojin must work together to search the
+                  darkest corners of the palace to uncover the deadly secrets
+                  behind the bloodshed.
+                </div>
+              </div>
+            </div>
+
+            <div class="book__container__profile">
+              <img
+                src="../BookReviewer/pictures/book_cover.jpeg"
+                alt="Friend Profile Picture"
+                class="book__profile__image"
+              />
+              <div class="book__info__container">
+                <div class="Book__name">
+                  <a href="../book/index.html" class="Book__link"
+                    ><p class="book__name">Name</p></a
+                  >
+                  <p>by Author</p>
+                </div>
+                <div class="description">
+                  To enter the palace means to walk a path stained in blood...
+                  Joseon (Korea), 1758. There are few options available to
+                  illegitimate daughters in the capital city, but through hard
+                  work and study, eighteen-year-old Hyeon has earned a position
+                  as a palace nurse. All she wants is to keep her head down, do
+                  a good job, and perhaps finally win her estranged father's
+                  approval. But Hyeon is suddenly thrust into the dark and
+                  dangerous world of court politics when someone murders four
+                  women in a single night, and the prime suspect is Hyeon's
+                  closest friend and mentor. Determined to prove her beloved
+                  teacher's innocence, Hyeon launches her own secret
+                  investigation. In her hunt for the truth, she encounters
+                  Eojin, a young police inspector also searching for the killer.
+                  When evidence begins to point to the Crown Prince himself as
+                  the murderer, Hyeon and Eojin must work together to search the
+                  darkest corners of the palace to uncover the deadly secrets
+                  behind the bloodshed.
+                </div>
+              </div>
+            </div>
+
+            <div class="book__container__profile">
+              <img
+                src="../BookReviewer/pictures/book_cover.jpeg"
+                alt="Friend Profile Picture"
+                class="book__profile__image"
+              />
+              <div class="book__info__container">
+                <div class="Book__name">
+                  <a href="../book/index.html" class="Book__link"
+                    ><p class="book__name">Name</p></a
+                  >
+                  <p>by Author</p>
+                </div>
+                <div class="description">
+                  To enter the palace means to walk a path stained in blood...
+                  Joseon (Korea), 1758. There are few options available to
+                  illegitimate daughters in the capital city, but through hard
+                  work and study, eighteen-year-old Hyeon has earned a position
+                  as a palace nurse. All she wants is to keep her head down, do
+                  a good job, and perhaps finally win her estranged father's
+                  approval. But Hyeon is suddenly thrust into the dark and
+                  dangerous world of court politics when someone murders four
+                  women in a single night, and the prime suspect is Hyeon's
+                  closest friend and mentor. Determined to prove her beloved
+                  teacher's innocence, Hyeon launches her own secret
+                  investigation. In her hunt for the truth, she encounters
+                  Eojin, a young police inspector also searching for the killer.
+                  When evidence begins to point to the Crown Prince himself as
+                  the murderer, Hyeon and Eojin must work together to search the
+                  darkest corners of the palace to uncover the deadly secrets
+                  behind the bloodshed.
+                </div>
+              </div>
+            </div>
+
+            <div class="book__container__profile">
+              <img
+                src="../BookReviewer/pictures/book_cover.jpeg"
+                alt="Friend Profile Picture"
+                class="book__profile__image"
+              />
+              <div class="book__info__container">
+                <div class="Book__name">
+                  <a href="../book/index.html" class="Book__link"
+                    ><p class="book__name">Name</p></a
+                  >
+                  <p>by Author</p>
+                </div>
+                <div class="description">
+                  To enter the palace means to walk a path stained in blood...
+                  Joseon (Korea), 1758. There are few options available to
+                  illegitimate daughters in the capital city, but through hard
+                  work and study, eighteen-year-old Hyeon has earned a position
+                  as a palace nurse. All she wants is to keep her head down, do
+                  a good job, and perhaps finally win her estranged father's
+                  approval. But Hyeon is suddenly thrust into the dark and
+                  dangerous world of court politics when someone murders four
+                  women in a single night, and the prime suspect is Hyeon's
+                  closest friend and mentor. Determined to prove her beloved
+                  teacher's innocence, Hyeon launches her own secret
+                  investigation. In her hunt for the truth, she encounters
+                  Eojin, a young police inspector also searching for the killer.
+                  When evidence begins to point to the Crown Prince himself as
+                  the murderer, Hyeon and Eojin must work together to search the
+                  darkest corners of the palace to uncover the deadly secrets
+                  behind the bloodshed.
+                </div>
+              </div>
+            </div>
+
+            <div class="book__container__profile">
+              <img
+                src="../BookReviewer/pictures/book_cover.jpeg"
+                alt="Friend Profile Picture"
+                class="book__profile__image"
+              />
+              <div class="book__info__container">
+                <div class="Book__name">
+                  <a href="../book/index.html" class="Book__link"
+                    ><p class="book__name">Name</p></a
+                  >
+                  <p>by Author</p>
+                </div>
+                <div class="description">
+                  To enter the palace means to walk a path stained in blood...
+                  Joseon (Korea), 1758. There are few options available to
+                  illegitimate daughters in the capital city, but through hard
+                  work and study, eighteen-year-old Hyeon has earned a position
+                  as a palace nurse. All she wants is to keep her head down, do
+                  a good job, and perhaps finally win her estranged father's
+                  approval. But Hyeon is suddenly thrust into the dark and
+                  dangerous world of court politics when someone murders four
+                  women in a single night, and the prime suspect is Hyeon's
+                  closest friend and mentor. Determined to prove her beloved
+                  teacher's innocence, Hyeon launches her own secret
+                  investigation. In her hunt for the truth, she encounters
+                  Eojin, a young police inspector also searching for the killer.
+                  When evidence begins to point to the Crown Prince himself as
+                  the murderer, Hyeon and Eojin must work together to search the
+                  darkest corners of the palace to uncover the deadly secrets
+                  behind the bloodshed.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

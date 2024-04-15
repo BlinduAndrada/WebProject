@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../SignUp/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    />
+    <title>SignUp</title>
+  </head>
+  <body class="SignUp">
+    <header class="header">
+      <div class="container">
+        <img
+          src="../BookReviewer/pictures/Boo-Logo.png"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+    </header>
+    <div class="BigContainer">
+      <div class="NameContainer">
+        <p class="Name">BOO</p>
+        <p class="Saying">Create your new story, with us</p>
+      </div>
+      <div class="SignUpContainer">
+        <h1 class="SignupWriting">Sign Up</h1>
+        <div class="input-box">
+          <h3>Username:</h3>
+          <input type="text" placeholder="Your username" />
+        </div>
+        <div class="input-box">
+          <h3>Email:</h3>
+          <input type="email" placeholder="Your email" />
+        </div>
+        <div class="input-box">
+          <h3>Password:</h3>
+          <input type="password" placeholder="Your password" />
+        </div>
+        <div class="input-box">
+          <h3>Confirm password:</h3>
+          <input type="password" placeholder="Your password" />
+        </div>
+        <div class="remember">
+          <label class="remember-button">
+            <input type="checkbox" />Remember my account?
+          </label>
+        </div>
+        <div class="signup-footer">
+          <button
+            type="submit"
+            class="signup-button"
+            onclick="window.location.href='../MainPage/landingpage.html';"
+          >
+            Sign Up
+          </button>
+          <div class="login-link">
+            <h3 class="login-link-text">Do you have an account?</h3>
+            <a class="login-link-ref" href="../LogIn/login.html">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

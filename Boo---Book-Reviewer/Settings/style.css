@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+.container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  height: 7%;
+  background-color: #3D284F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  justify-content: space-between;
+  background-color: rgba(61, 40, 79, 0.7);
+}
+.container .hover-text {
+  position: relative;
+  align-self: center;
+  padding: 10px 20px;
+  width: 6.5rem;
+  background-color: #E3CEDD;
+  text-align: center;
+  margin-right: auto;
+}
+.container .loginButton {
+  width: 105px;
+  height: 35px;
+  border-radius: 1rem;
+  padding: 0;
+  border: 1rem;
+  background: #B790C2;
+  color: #E3CEDD;
+  font-size: medium;
+  background-color: #714e7d;
+}
+.container .loginButton:hover {
+  background-color: #3D284F;
+  color: #B790C2;
+}
+@media (max-width: 768px) {
+  .container .container {
+    padding: 0 10px;
+  }
+  .container .container .hover-text {
+    padding: 10px 10px;
+  }
+}
+
+.header_BOO {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  background-color: #fff;
+  color: #3D284F;
+}
+.header_BOO .logo__image {
+  max-width: 60px;
+}
+.header_BOO .search {
+  display: flex;
+  align-items: center;
+}
+.header_BOO .search .search__input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  max-width: 100px;
+}
+.header_BOO .search .search__button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #714E7D;
+  border: none;
+  border-color: #3D284F;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.header_BOO .nav {
+  display: flex;
+  position: relative;
+}
+.header_BOO .nav .nav__list {
+  list-style-type: none;
+  display: flex;
+}
+.header_BOO .nav .nav__list .nav__item {
+  margin-right: 20px;
+}
+.header_BOO .nav .nav__list .nav__item .a {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.header_BOO .nav .nav__item_special:hover .nav_dropdown {
+  text-decoration: none;
+  display: block;
+  padding-left: 0px;
+}
+.header_BOO .nav .nav__item_special {
+  list-style-type: none;
+  align-items: center;
+  align-self: flex-start;
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown {
+  list-style-type: none;
+  width: 100%;
+  background: #B790C2;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  left: 0px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown .li {
+  display: block;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown .li .nav__link_menu {
+  text-decoration: none;
+  color: #B790C2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+}
+@media screen and (max-width: 748px) {
+  .header_BOO .search {
+    flex-direction: column;
+  }
+  .header_BOO .search .search__input {
+    margin-bottom: 5px;
+    width: auto;
+  }
+}
+
+.friend__container .friend__container__profile {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #B790C2;
+}
+.friend__container .friend__container__profile .friend__profile__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.friend__container .friend__container__profile .profile__container {
+  flex: 1;
+  font-size: 16px;
+}
+.friend__container .friend__container__profile .profile__container .profile__name {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.friend__container .friend__container__profile .profile__container .profile__name .name {
+  padding-right: 5px;
+}
+
+.body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.block_container {
+  position: fixed;
+  z-index: 400;
+  display: block;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  margin-inline: auto;
+  min-height: auto;
+}
+.block_container .feed_container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 450;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../BookReviewer/pictures/SignUpPage.jpg);
+}
+.block_container .feed_container .feed_container_side {
+  z-index: 460;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  background-color: rgba(244, 247, 240, 0.5);
+  overflow-y: auto;
+}
+.block_container .feed_container .feed_container_side .profile {
+  text-align: center;
+  padding: 20px;
+}
+.block_container .feed_container .feed_container_side .profile .profile__image {
+  max-width: calc(100% - 40px);
+  min-height: auto;
+  margin-bottom: 20px;
+  border: 4px solid #714E7D;
+}
+@media screen and (max-width: 768px) {
+  .block_container .feed_container .feed_container_side .profile .profile__image {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button {
+  padding: 8px 16px;
+  margin: 10px 5px;
+  font-size: 14px;
+  background-color: #B790C2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button:hover {
+  background-color: #714E7D;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button:focus {
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .block_container .feed_container .feed_container_side .profile .profile__button {
+    padding: 6px 12px;
+    font-size: 9px;
+  }
+}
+.block_container .feed_container .feed_container_side .account-details {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.block_container .feed_container .feed_container_side .account-details__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.block_container .feed_container .feed_container_side .account-details .detail {
+  flex: 1;
+  margin-right: 10px;
+}
+.block_container .feed_container .feed_container_side .account-details label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
+}
+.block_container .feed_container .feed_container_side .account-details input[type=text],
+.block_container .feed_container .feed_container_side .account-details input[type=tel],
+.block_container .feed_container .feed_container_side .account-details input[type=email],
+.block_container .feed_container .feed_container_side .account-details select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.block_container .feed_container .feed_container_side .account-details .dob {
+  display: flex;
+}
+.block_container .feed_container .feed_container_side .account-details .dob select {
+  flex: 1;
+  margin-right: 5px;
+}
+.block_container .feed_container .feed_container_side .account-details__title {
+  color: black;
+}
+.block_container .feed_container .feed_container_side .account-details__description {
+  color: black;
+}
+.block_container .feed_container .feed_container_side .about-you {
+  margin-top: 40px;
+}
+.block_container .feed_container .feed_container_side .about-you h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.block_container .feed_container .feed_container_side .about-you h4 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.block_container .feed_container .feed_container_side .about-you .form-group {
+  margin-bottom: 20px;
+}
+.block_container .feed_container .feed_container_side .about-you textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.block_container .feed_container .feed_container_side .about-you textarea {
+  min-height: 150px;
+}
+.block_container .feed_container .feed_container_side .about-you button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.block_container .feed_container .feed_container_side .about-you button:hover {
+  background-color: #0056b3;
+}
+.block_container .feed_container .feed_container_side .my-interests {
+  margin-bottom: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block_container .feed_container .feed_container_side .book-preferences {
+  margin-bottom: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block_container .feed_container .feed_container_side .about-me-part {
+  margin-bottom: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block_container .feed_container .feed_container_side .button-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #573f6a;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.block_container .feed_container .feed_container_side .button-group button:hover {
+  background-color: #452d4d;
+}/*# sourceMappingURL=style.css.map */

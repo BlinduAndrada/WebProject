@@ -1,0 +1,344 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 7%;
+  background-color: #3D284F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  justify-content: space-evenly;
+  justify-items: center;
+  background-color: rgba(61, 40, 79, 0.7);
+  padding-left: 20%;
+}
+.container .hover-text {
+  position: relative;
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #E3CEDD;
+  align-self: center;
+}
+.container .loginButton {
+  align-self: flex-end;
+  z-index: 999;
+  width: 105px;
+  height: 35px;
+  border-radius: 1rem;
+  padding: 0;
+  border: 0;
+  background: #B790C2;
+  color: #E3CEDD;
+  font-size: medium;
+  background-color: #714e7d;
+}
+
+.header_BOO {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  background-color: #fff;
+  color: #3D284F;
+}
+.header_BOO .logo__image {
+  max-width: 60px;
+}
+.header_BOO .search {
+  display: flex;
+  align-items: center;
+}
+.header_BOO .search .search__input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  max-width: 100px;
+}
+.header_BOO .search .search__button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #714E7D;
+  border: none;
+  border-color: #3D284F;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.header_BOO .nav {
+  display: flex;
+  position: relative;
+}
+.header_BOO .nav .nav__list {
+  list-style-type: none;
+  display: flex;
+}
+.header_BOO .nav .nav__list .nav__item {
+  margin-right: 20px;
+}
+.header_BOO .nav .nav__list .nav__item .a {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.header_BOO .nav .nav__item_special:hover .nav_dropdown {
+  text-decoration: none;
+  display: block;
+  padding-left: 0px;
+}
+.header_BOO .nav .nav__item_special {
+  list-style-type: none;
+  align-items: center;
+  align-self: flex-start;
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown {
+  list-style-type: none;
+  width: 100%;
+  background: #B790C2;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  left: 0px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown .li {
+  display: block;
+}
+.header_BOO .nav .nav__item_special .nav_dropdown .li .nav__link_menu {
+  text-decoration: none;
+  color: #B790C2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+}
+@media screen and (max-width: 748px) {
+  .header_BOO .search {
+    flex-direction: column;
+  }
+  .header_BOO .search .search__input {
+    margin-bottom: 5px;
+    width: auto;
+  }
+}
+
+.friend__container .friend__container__profile {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #B790C2;
+}
+.friend__container .friend__container__profile .friend__profile__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.friend__container .friend__container__profile .profile__container {
+  flex: 1;
+  font-size: 16px;
+}
+.friend__container .friend__container__profile .profile__container .profile__name {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.friend__container .friend__container__profile .profile__container .profile__name .name {
+  padding-right: 5px;
+}
+
+.body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.block_container {
+  position: fixed;
+  z-index: 400;
+  display: block;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+ 
+  margin-inline: auto;
+  min-height: auto;
+}
+.block_container .feed_container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 450;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../BookReviewer/pictures/SignUpPage.jpg);
+}
+.block_container .feed_container .feed_container_side {
+  z-index: 460;
+  width: 200%;
+  height: 21%;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding-bottom: 0px;
+  background-color: #fff;
+}
+.block_container .feed_container .feed_container_side .profile {
+  text-align: center;
+  padding: 20px;
+}
+.block_container .feed_container .feed_container_side .profile .profile__image {
+  max-width: calc(100% - 40px);
+  min-height: auto;
+  margin-bottom: 20px;
+  border: 4px solid #714E7D;
+}
+@media screen and (max-width: 768px) {
+  .block_container .feed_container .feed_container_side .profile .profile__image {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button {
+  padding: 8px 16px;
+  margin: 10px 5px;
+  font-size: 14px;
+  background-color: #B790C2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button:hover {
+  background-color: #714E7D;
+}
+.block_container .feed_container .feed_container_side .profile .profile__buttons .profile__button:focus {
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .block_container .feed_container .feed_container_side .profile .profile__button {
+    padding: 6px 12px;
+    font-size: 9px;
+  }
+}
+.block_container .feed_container .feed_container_side .library-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px #F4F7F0;
+  background-color: #F4F7F0;
+}
+.block_container .feed_container .feed_container_side .categories {
+  padding-bottom: 20px;
+  background-color: #F4F7F0;
+}
+.block_container .feed_container .feed_container_side .categories h2 {
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.block_container .feed_container .feed_container_side .categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.block_container .feed_container .feed_container_side .categories li {
+  margin-bottom: 10px;
+}
+.block_container .feed_container .feed_container_side .categories a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.block_container .feed_container .feed_container_side .categories a.active {
+  text-decoration: underline;
+}
+.block_container .feed_container .feed_container_side .books {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .block_container .feed_container .feed_container_side .library-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+  .block_container .feed_container .feed_container_side .categories {
+    padding-bottom: 0;
+  }
+  .block_container .feed_container .feed_container_side .books {
+    flex: 1;
+    text-align: initial;
+  }
+}
+.block_container .feed_container_main_feed {
+  margin-top: 20px;
+  margin-left: 25%; 
+  transform: translateX(-50%);
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.block_container .main_feed__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.block_container .book__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block_container .book__container__info {
+  flex: 0 0 95%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.block_container .book__cover__image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  float: left;
+}
+.block_container .book__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.block_container .book__author {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+.block_container .book__description {
+  color: #333;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */

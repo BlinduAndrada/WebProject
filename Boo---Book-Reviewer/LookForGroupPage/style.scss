@@ -1,0 +1,50 @@
+@import '../BookReviewer/global/boilerplate';
+@import '../GroupPage/style.scss';
+
+*{
+    box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+.profile__link{
+    background-color:#e3cedd;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    text-decoration: none;
+
+    @media screen and (max-width: 768pc){
+        font-size: small;
+        border-radius: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    
+
+}
+
+.profile__link:hover{
+    background-color: #714E7D;
+    color:#e3cedd;
+    
+}
+
+.profile__p{
+    color: #714E7D;
+    font-size: large;
+}
+
+.create__new{
+    text-decoration: none;
+    color: #714E7D;
+    padding-bottom: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    background-color: #e3cedd;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: larger;
+}
+h3{
+    color: #714E7D;
+}

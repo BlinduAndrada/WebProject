@@ -1,0 +1,164 @@
+@import '../BookReviewer/global/boilerplate';
+
+*{box-sizing: border-box;
+margin: 0px;
+padding: 0px;}
+
+body{
+    background-color: #E3CEDD;
+    background-image: url('../BookReviewer/pictures/904d534af9db5e0219dab903b15aa0ba.jpg');
+    background-blend-mode: multiply;
+}
+
+
+.AboutUs__Heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+    margin:20px auto;
+
+   
+}
+
+.h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.h1::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #714E7D;
+}
+
+
+ .AboutUs__Heading p{
+        font-size: 18px;
+        color: #714E7D;
+        margin-bottom: 35px;
+    }
+
+.body_container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    .body__container__about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .about__image{
+            flex:1;
+            margin-right: 30px;
+            overflow: hidden;
+
+            .about_image_link{
+                
+             
+                max-width: 100%;
+                height: auto;
+                display: block;
+             
+            }
+           
+        }
+
+        .about__image:hover img{
+            transform: scale(1.2);
+        }
+
+        .about__content{
+            flex:1;
+            padding-left: 0;
+            margin-left: 0;
+
+            .about__content__h2{
+                font-size: 23px;
+                margin-bottom: 15px;
+                color:aquamarine
+
+            }
+
+            .about__content__p{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #714E7D;
+            }
+
+            .content__readMore{
+                display: inline-block;
+                padding: 10px 20px;
+                color: aliceblue;
+                background-color:#E3CEDD;
+                font-size: 19px;
+                text-decoration: none;
+                border-radius: 20px;
+                margin-top: 15px;
+                transition: 0.4s ease;
+            }
+
+            .content__readMore:hover{
+                background-color: #714E7D;
+            }
+
+
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 768pc){
+
+.AboutUs__Heading{
+    padding: 0px 20px;
+    
+}
+
+.AboutUs__Heading h1{
+    font: 36px;
+}
+
+.AboutUs__Heading p{
+    font-size: 16px;
+    margin-bottom:0px ;
+}
+
+.body__container{
+    padding: 0px;
+
+    .body__container__about{
+        padding: 15px;
+        flex-direction: column;
+
+        .about__image{
+            margin-right: 0px;
+            margin-bottom: 15px;
+
+        }
+
+        .about__content__p{
+            padding: 0px;
+            font-size: 16px;
+        }
+
+        .content__readMore{
+            font-size: 16px;
+        }
+    }
+
+}
+    
+}

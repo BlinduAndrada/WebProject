@@ -1,0 +1,177 @@
+@import '../BookReviewer/global/boilerplate';
+
+
+.header {
+    background-color: #D0B9D4;
+    padding: 10px 0;
+    margin: 0; 
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.login-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+body.SignUp{
+    z-index: 0;
+    margin: 0 auto;
+    object-fit:scale-down;
+    background-color: #B790C2;
+   
+    
+ }
+ .SignUp::after {
+    background: url("/BookReviewer/pictures/SignUpPage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.BigContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+
+.NameContainer {
+    text-align: center;
+    color: #714E7D;
+    margin-bottom: 50px;
+    margin-right: 10%;
+}
+
+.Name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Saying {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.SignUpContainer {
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 30px 40px;
+    width: 30%;
+}
+
+.SignupWriting {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #714E7D;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #B790C2;
+    border-radius: 30px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #714E7D;
+    padding-left: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-button {
+    font-size: 14px;
+}
+
+.signup-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #714E7D;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-link {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.login-link-text {
+    margin-right: 10px;
+}
+
+.login-link-ref {
+    text-decoration: underline;
+    color: #714E7D;
+    cursor: pointer;
+}
+
+h3{
+    color: #714E7D;
+}
+
+@media screen and (max-width: 768px) {
+    .NameContainer {
+        margin-bottom: 20px; 
+    }
+
+    .SignUpContainer {
+        width: 80%; 
+    }
+
+    .BigContainer {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .login-link {
+        margin-top: 10px; 
+    }
+}

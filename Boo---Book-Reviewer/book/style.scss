@@ -1,0 +1,166 @@
+@import '../BookReviewer/global/boilerplate';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../BookReviewer/pictures/904d534af9db5e0219dab903b15aa0ba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.body_container {
+    max-width: 800px;
+     margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+   
+        
+}
+
+
+.book-header {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.book-header h1 {
+    margin-bottom: 10px;
+}
+
+.book-header p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.rating {
+    font-size: 18px;
+    color: #f90;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.book-details {
+    display: flex;
+    margin-top: 50px; 
+}
+
+.book-cover img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.book-info {
+    flex: 1;
+}
+.want-to-read-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.rating-stars {
+    font-size: 24px;
+}
+.rating-stars span {
+    color: #FFD700;
+    cursor: pointer;
+}
+.rating-stars span:hover,
+.rating-stars span.checked {
+    color: #ff9900;
+}
+
+.reviews {
+    margin-top: 20px;
+    overflow-y: auto; 
+    max-height: 300px; 
+    
+  }
+  .reviews::-webkit-scrollbar{
+    width: 5px;
+    }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid black; 
+  padding: 10px; 
+  }
+  
+  .account {
+    margin-right: 10px;
+  }
+  
+  .account-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+  }
+  
+  .comment-text {
+    flex: 1; 
+  }
+  
+
+.book-info h2 {
+    margin-top: 20px;
+}
+
+.book-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-info ul li {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .body_container {
+        padding: 0 20px;
+    }
+
+    .book-details {
+        flex-direction: column;
+        margin-top: 20px; 
+    }
+
+    .book-cover img {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .comment {
+        flex-direction: column; 
+      }
+}

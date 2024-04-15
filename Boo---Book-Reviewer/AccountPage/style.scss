@@ -1,0 +1,229 @@
+@import '../BookReviewer/global/boilerplate';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.block_container{
+    position:fixed;
+    z-index:400;
+    display: block;
+    background-color: #fff;
+    margin: 0px;
+  
+    padding: 0px;
+   
+    margin-inline: auto; 
+    min-height: auto;
+
+}
+
+
+.profile__container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 450;
+    width: 100vw;
+    height: 100vh;
+    background-color:#e3cedd;
+
+    .container__side{
+        width: 30%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: #e3cedd;
+        align-items: center;
+        min-height: auto;
+
+        .side__photo{
+            max-width: calc(100% - 50px);
+            min-height: auto;
+            margin: 1rem 4rem 0rem 4rem;
+            border-radius: 1rem;
+            border: 2px solid #714E7D;
+            overflow: auto;
+
+            @media screen and (max-width: 748px){ 
+                max-width: calc(100% - 70px);
+                
+            }
+        }
+
+        .side__name{
+            color: #714E7D;
+            margin-top: 0px;
+            margin-bottom: 3rem;
+            font-size:x-large;
+        }
+
+        .side__date{
+            color: #714E7D;
+            margin-top:0;
+            margin-bottom: 0;
+            font-size:x-large;
+        }
+
+        .side__books{
+            color: #714E7D;
+            margin-top: 1rem;
+            font-size:x-large;
+        }
+
+    }
+
+    .container__main{
+        
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        z-index: 461;
+        height: auto;
+        background-color: #fff;
+        margin-top: 0px;
+        margin-right: 5%;
+        padding-top: 0px;
+        border: 3px solid #714E7D;
+        
+         .main__books{
+         
+            border: 3px solid #e3cedd;
+            background-color: #e3cedd;
+            
+           
+            .books__container{  
+                display: flex;
+                overflow-x: auto;
+                max-width: 100%;
+                padding: 10px;
+                background-color: #fff;
+               
+
+                .book{
+                    margin-right: 40px;
+
+                    .book__photo{
+                        width: 100px; /* Adjust width as needed */
+                        height: 150px; /* Adjust height as needed */
+                        background-color: #ffffff; /* Set background color for the "pages" of the book */
+                        border: 3px solid #714E7D; /* Add border to resemble book cover */
+                        
+                    }
+
+                    .book__title{
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                }
+               
+            }
+         }
+
+         @media screen and (max-width: 768px) {
+            .books__container {
+              padding: 5px; 
+            }
+          
+            .book {
+              margin-right: 5px;
+          
+              .book__photo {
+                width: 80px; 
+              }
+          
+              .book__title {
+                margin-top: 10px; 
+              }
+            }
+        }
+
+    }
+.main__friends::-webkit-scrollbar{
+width: 0px;
+}
+    .main__friends{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        flex:1;
+        border: 3px solid #e3cedd;
+        overflow-y: scroll;
+        
+        
+        .friend_list_name{
+            color: #714E7D;
+            font-size: large;
+            font-weight: 400;
+            
+        }
+
+       .friend__list{
+        margin-top: 1rem;
+        .friend__item{
+            margin-bottom: 10px;
+            margin-left: 10px;
+            list-style-type: none;
+            .friend__link{
+                padding-top: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-bottom: 3px;
+                text-decoration: none;
+                color: #714E7D;
+               
+            }
+
+            .friend__link:hover{
+                background-color: #714E7D;
+                color:#e3cedd;
+                border-radius: 10px;
+            }
+        }
+
+       }
+       
+    }
+
+    .about__me__section{
+        color: #714E7D;
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1rem;
+      
+        .section{
+            height: 20px;
+            flex:1;
+            overflow-x: scroll;
+            font-size: 14px;
+            margin-bottom: 20px;
+
+            .section__type{
+        font-size: 16px;
+            }
+        }
+      
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+      
+        }
+        
+    }
+}
+.main__settings__button{
+    text-decoration: none;
+    color: #714E7D;
+    padding-bottom: 1rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    background-color: #e3cedd;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: larger;
+}

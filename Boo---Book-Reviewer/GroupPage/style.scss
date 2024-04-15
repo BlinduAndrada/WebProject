@@ -1,0 +1,167 @@
+@import '../BookReviewer/global/boilerplate';
+*{
+    box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+.block_container{
+    position:fixed;
+    z-index:400;
+    display: block;
+    background-color: #fff;
+    margin: 0px;
+  
+    padding: 0px;
+    margin-inline: auto; 
+    min-height: auto;
+
+    
+.feed_container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 450;
+    width: 100vw;
+    height: 100vh;
+    background-color:#e3cedd;
+
+    .feed_container_side{
+        z-index: 460;
+        width: 27%;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        padding-bottom: 0px;
+        background-color:#fff;
+
+        .profile{
+            text-align: center;
+            overflow: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         
+
+            .profile__image {
+                max-width: calc(100% - 40px);
+                min-height: auto;
+                margin-bottom: 20px;
+                border: 4px solid #714E7D;
+
+                @media screen and (max-width: 600px) {
+                    width: calc(100% - 2px); 
+                    max-width: calc(100% - 2px); 
+              }
+
+            }
+
+            .group__list{
+              
+                max-width: 300px;
+                overflow: auto;
+                padding-left: 0;
+                font-size: large;
+                font-weight: 400;
+                list-style-type: none;
+
+                .group__item{
+                    padding-bottom: 1rem;
+                    padding: 0 1rem;
+                    margin-bottom: 1rem;
+                    background-color: #e3cedd;
+                    text-align: center;
+                    border-radius: 1rem;
+
+                    .group__link{
+                        text-decoration: none;
+                        color: #714E7D;
+                    }
+
+                    @media screen and (max-width: 748px) {
+                       font-size: small;
+                       padding: 0px 15px;
+                       border-radius: 1rem;
+
+                  }
+
+                }
+            }
+
+            .profile__p{
+                color: #714E7D;
+
+                @media screen and (max-width: 748px) {
+                    font-size: small;
+                    padding: 0px 15px;
+                    
+                }
+
+            }
+
+            .Join_Other_Groups{
+                font-size: larger;
+                color: #714E7D;
+                text-decoration: none;
+
+
+                @media screen and (max-width: 748px) {
+                    font-size: small;
+                    padding: 0px 15px;
+                    border-radius: 1rem;
+                
+                }
+            }
+
+            .Join_Other_Groups:hover{
+                background-color: #714E7D;
+                color: #e3cedd;
+                border-radius: 1rem;
+
+                @media screen and (max-width: 748px) {
+                    font-size: small;
+                    padding: 0px 15px;
+                    border-radius: 1rem;
+               
+                }
+
+            }
+
+        }
+        @media screen and (max-width: 600px) {
+            min-height: auto;
+            max-width: 20%;
+      }
+
+    }
+
+   
+}
+.feed_container_main_feed{
+    z-index: 461;
+    max-width: 73%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    border: 3px solid #714E7D;
+    background-color: #fff;
+    overflow-y:scroll;
+
+    .main_feed__title{
+      color: #714E7D;
+      font-size: larger;
+      padding-left: 40px ;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      border-bottom: 3px solid #714E7D;
+    }
+    
+
+
+}
+
+}
